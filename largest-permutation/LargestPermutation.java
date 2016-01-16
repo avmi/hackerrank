@@ -6,7 +6,7 @@ import java.util.regex.*;
 
 // TODO: Fix timeout in test case #13, sometimes 14 and 15
 
-public class Solution {
+public class LargestPermutation {
 
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);

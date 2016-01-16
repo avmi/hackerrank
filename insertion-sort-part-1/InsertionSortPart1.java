@@ -4,7 +4,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution {
+public class InsertionSortPart1 {
     public static void insertIntoSorted(int[] ar) {
         int numToInsert = ar[ar.length-1];
         int pos = ar.length-2;

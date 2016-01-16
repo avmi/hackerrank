@@ -3,11 +3,11 @@ import java.util.*;
 
 // TODO: Fix timeout in test cases #10 and #11
 
-public class Solution {
+public class StringSimilarity {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Solution context = new Solution();
+        StringSimilarity context = new StringSimilarity();
         int numCases = scanner.nextInt();
 
         for (int i = 0; i < numCases; i++) {

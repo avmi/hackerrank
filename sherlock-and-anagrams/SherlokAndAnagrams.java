@@ -4,7 +4,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class Solution {
+public class SherlokAndAnagrams {
 
     public static void main(String[] args) {
         int[] frequency = new int[26];
