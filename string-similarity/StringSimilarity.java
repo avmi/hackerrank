@@ -7,35 +7,30 @@ public class StringSimilarity {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        StringSimilarity context = new StringSimilarity();
         int numCases = scanner.nextInt();
 
         for (int i = 0; i < numCases; i++) {
             String input = scanner.next();
-            context.solve(input);
+            System.out.println(solve(input));
         }
     }
 
-    private void solve(String input) {
-        String str = input;
-        int len = input.length();
-        int count = 0;
-        int total = 0;
+    public static int solve(String s) {
+        int length = s.length();
+        int count = length;
 
-        for (int i=1; i<len; i++) {
-            count=0;
-            for (int j=i; j<len; j++) {
-                if(str.charAt(j-i)==str.charAt(j)) {
-                    count++;
-                }
-                else {
+        for (int i = 1; i < length; i++) {
+            int len = length - i;
+            int j;
+
+            for(j = 0; j < len; j++) {
+                if (s.charAt(j) != s.charAt(j + i)) {
                     break;
                 }
             }
-
-            total += count;
+            count += j;
         }
 
-        System.out.println(total+len);
+        return count;
     }
 }
