@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 import java.math.*;
 
-public class Solution {
+public class BeadOrnaments {
     static Scanner in;
     static int n;
     static final BigInteger two = new BigInteger("2");
