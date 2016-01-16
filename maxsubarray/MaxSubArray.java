@@ -4,7 +4,7 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class MaxSubArr {
+public class MaxSubArray {
     static int max(int x, int y) {
         return (y > x) ? y : x;
     }
