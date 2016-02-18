@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Solution {
+public class InsertionSortPart2 {
 
     public static void sort(int[] arr, int s) {
         for (int i = 0; i < s - 1; i++) {
@@ -12,6 +12,7 @@ public class Solution {
 
                     arr[j] = arr[j - 1];
                     arr[j - 1] = temp;
+
                     j--;
                 }
                 else {
