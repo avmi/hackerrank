@@ -51,7 +51,7 @@ function volleyball(A, B) {
     var r = iter(mw, ml);
     if (w <= 25) return r;
 
-    r = (r * pow(2, d - 2)) % mod;
+    r = (r * p(2, d - 2)) % mod;
 
     return r;
 }
